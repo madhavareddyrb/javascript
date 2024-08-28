@@ -5,7 +5,12 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Calculator</title>
 </head>
+<!--here i have craeted everything using console printing option -->
+<p>Here i have craeted everything by using console.<br>
+  right click on empty page and enter to inspect and goto console to see how it works by click on buttons
+</p>
 <p>
+  
   <button onclick="calculation+='1';
   console.log(calculation) ">1</button>
   <button onclick="calculation+='2';
@@ -43,16 +48,18 @@ console.log(`${calculation}`)
 ">*</button>
 <p>
   <button onclick="calculation+='0';
-console.log(calculation) ">1</button>
+console.log(calculation) ">0</button>
 <button onclick="calculation+='.';
 console.log(calculation)
-">2</button>
-<button onclick="calculation+='='
+">.</button>
+<button onclick="calculation=eval(calculation)
 console.log(calculation)
-">3</button>
-<button onclick="calculation+=' /  ';
-console.log(`${calculation}`)
-">+</button>
+">=</button>
+<button onclick="calculation+='/'; console.log(`${calculation}`)
+
+">/</button>
+<button onclick="calculation='';
+console.log(`console clear`)">clear</button>
 <p>
   <script>
     let calculation="";

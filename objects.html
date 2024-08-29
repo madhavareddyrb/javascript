@@ -6,6 +6,37 @@
   <title>Objects</title>
 </head>
 <body>
-  
+  <script>
+    let product={
+      name:'Basketball',
+      price1:2095,
+    };
+
+   console.log(product.name);
+   product.price1= 2095+500
+   console.log(product.price1)
+   product['delivary-time']='3-days'
+   console.log(product['delivary-time']);
+   function compareproducts(product2,product3){
+        if(product2.price<product3.price){
+          return product2;
+        }else{
+          return product3;
+        }
+
+   }
+   const product2={
+    name:'basketball',
+    price:2025
+   };
+   const product3={
+    name:'socks',
+    price:1090
+   };
+    console.log(compareproducts(product2,product3));
+
+
+
+  </script>
 </body>
 </html>

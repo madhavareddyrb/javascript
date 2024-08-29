@@ -6,6 +6,29 @@
   <title>functions</title>
 </head>
 <body>
-  
+  <script>
+    function greet(name){
+      console.log(`hello $${name}!`)
+    }
+     let name =greet();
+     if(name===greet()){
+  console.log("Hi There")
+} 
+   
+ 
+  function convertToFaherenheit(celsius){
+   return(celsius * 9/5)+32;
+ } ; console.log(convertToFaherenheit(25))
+
+ function convertToCelsius(Fahrenhit){
+  return(Fahrenhit-32)*5/9;
+ };console.log(convertToCelsius(86))
+
+ function convertTemperatures(degrees,unit){
+  return(degrees*9/5)+32+'F';
+ }console.log(convertTemperatures(25));
+ 
+ 
+  </script>
 </body>
 </html>
